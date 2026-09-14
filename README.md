@@ -121,10 +121,12 @@ Writing all this down actually helped me understand what I was clicking.
 
 ---
 
-🔗 **Tools used:**
+## 🔗 Tools used:
 * **7-Zip:** https://7-zip.org/
 * **VirtualBox:** https://virtualbox.org/wiki/Downloads
 * **Kali Linux:** https://kali.org/get-kali
+
+---
 
 ## 👤 Author
 
@@ -136,4 +138,4 @@ Writing all this down actually helped me understand what I was clicking.
 
 ## 📌 Project Information
 
-Program Name: Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository: GitHub
+**Program Name:** Cybersecurity at Networkwalks | **Week:** 01 | **Project:** Cybersecurity & Pentesting Lab Setup |**Repository:** GitHub
