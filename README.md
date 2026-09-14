@@ -56,16 +56,24 @@ Kali Linux virtual machine files often come compressed as .7z archives. Step zer
 ### Step 2: Installing VirtualBox
 I went with VirtualBox 7.2 as my hypervisor. The installation was straightforward on Windows 11.
 
+<img width="1917" height="1076" alt="Screenshot 2026-09-14 003727" src="https://github.com/user-attachments/assets/a45a2b58-4db6-48e9-be23-238f33e93ddd" />
+
 ### Step 3: Created the NAT Network
 Went with:
 * **Network Name:** `NatNetwork`
 * **IPv4 Prefix:** `10.0.0.0/24`
 * **DHCP:** Enabled
 
+<img width="1917" height="1078" alt="Screenshot 2026-09-12 012745" src="https://github.com/user-attachments/assets/40fbf97b-528c-40f8-9867-d7ff9559068f" />
+
+
 ### Step 4: Imported Kali Linux
 Downloaded the Kali VM from the official site and imported it into VirtualBox. I allocated **4096 MB (4GB) of RAM** to keep things smooth, and set the network adapter like this:
 * **Attached to:** NAT Network
 * **Network:** `NatNetwork`
+
+<img width="1882" height="1027" alt="Screenshot 2026-09-12 023741" src="https://github.com/user-attachments/assets/88aba580-1ed2-4ad4-bd62-b8b1a638fc7e" />
+
 
 ### Step 5: Set a Static IP on Kali
 By default, Kali just grabs whatever DHCP hands it. I didn't want to keep typing `ip a` every time I booted the machine just to find my IP, so I set it manually using Kali's Network Manager:
