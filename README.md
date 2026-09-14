@@ -91,3 +91,49 @@ To prove the lab actually works, I ran a series of pre-flight checks from my Kal
 | **Nmap installed** | `nmap --version` | Showed the Nmap version |
 
 ---
+
+## 🐞 Problems I Ran Into (And How I Fixed Them)
+
+No IT project goes perfectly on the first try. Here are the walls I hit:
+
+### Problem 1: VirtualBox wouldn't show me the Network tool
+Right after installing VirtualBox, I went looking for the Network option under Tools to set up my NAT Network — and it wasn't there! 
+* **The Fix:** I realized VirtualBox defaulted to **Basic Mode**. I went into Preferences, switched the Experience Mode to **Expert**, and restarted. Boom, the Network tool appeared in the sidebar.
+
+### Problem 2: Internet dropped after setting my Static IP
+After I manually configured my static IP (`10.0.0.2`), I completely lost outbound internet connectivity. It turns out this can happen due to how Kali's NetworkManager handles Duplicate Address Detection (DAD).
+* **The Fix:** I opened the terminal and ran: 
+  `sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0`
+  After restarting the network connection, my internet came right back.
+
+### Problem 3: The VT-x BIOS Error
+When I first tried to boot Kali, it crashed with a hardware virtualization error.
+* **The Fix:** My HP Victus had Intel VT-x disabled by default. I restarted the laptop, mashed the F10 key to enter the BIOS, enabled virtualization, saved, and rebooted. Smooth sailing after that.
+
+---
+
+## 💡 What I Learned
+Writing all this down actually helped me understand what I was clicking. 
+1. **Basic vs Expert Mode matters:** That one popup during install quietly decides what GUI tools you can even see.
+2. **NAT Network ≠ regular NAT:** I now understand how to route multiple VMs together on a private virtual switch.
+3. **Static IPs make life easier:** No more guessing my IP address.
+4. **Documentation isn't busywork:** Documenting the `nmcli` fix means I won't have to spend an hour Googling it if it happens again.
+
+---
+
+🔗 **Tools used:**
+* **7-Zip:** https://7-zip.org/
+* **VirtualBox:** https://virtualbox.org/wiki/Downloads
+* **Kali Linux:** https://kali.org/get-kali
+
+## 👤 Author
+
+**Narugopal Sing**
+
+**LinkedIn:** 
+
+---
+
+## 📌 Project Information
+
+Program Name: Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository: GitHub
