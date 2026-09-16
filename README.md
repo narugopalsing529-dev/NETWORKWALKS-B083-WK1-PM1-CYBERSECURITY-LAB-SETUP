@@ -1,4 +1,3 @@
-# NETWORKWALKS-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
 # 🔐 Cybersecurity Lab Setup — VirtualBox + Kali Linux
 
 This repo documents how I set up my own isolated cybersecurity lab using VirtualBox and Kali Linux, as part of Week 1 of the Networkwalks Cybersecurity program.
