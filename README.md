@@ -38,9 +38,9 @@ I needed a network where my future "Attacker" and "Target" machines could talk t
 | **Network Type** | NAT Network (Not standard NAT!) |
 | **Network Name** | `NatNetwork` |
 | **Subnet** | `10.0.0.0/24` |
-| **Kali's IP** | `10.0.0.2/24` (Static) |
+| **Kali's IP** | `10.0.0.10/24` (Static) |
 | **Gateway** | `10.0.0.1` |
-| **DNS** | `8.8.8.8` |
+| **DNS** | `8.8.8.8`,`1.1.1.1` |
 
 > **Note:** I am intentionally leaving IPs `10.0.0.3` through `10.0.0.99` free. As the bootcamp progresses, I will deploy vulnerable target VMs in this range.
 
@@ -76,7 +76,7 @@ Downloaded the Kali VM from the official site and imported it into VirtualBox. I
 
 ### Step 5: Set a Static IP on Kali
 By default, Kali just grabs whatever DHCP hands it. I didn't want to keep typing `ip a` every time I booted the machine just to find my IP, so I set it manually using Kali's Network Manager:
-* **Address:** `10.0.0.2`
+* **Address:** `10.0.0.10`
 * **Netmask:** `24`
 * **Gateway:** `10.0.0.1`
 
