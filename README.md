@@ -72,14 +72,15 @@ Downloaded the Kali VM from the official site and imported it into VirtualBox. I
 * **Attached to:** NAT Network
 * **Network:** `NatNetwork`
 
-<img width="1882" height="1027" alt="Screenshot 2026-09-12 023741" src="https://github.com/user-attachments/assets/88aba580-1ed2-4ad4-bd62-b8b1a638fc7e" />
-
+<img width="1916" height="1077" alt="Screenshot 2026-09-16 120808" src="https://github.com/user-attachments/assets/ccd81360-fcab-4675-98a1-4d5d9c6965b0" />
 
 ### Step 5: Set a Static IP on Kali
 By default, Kali just grabs whatever DHCP hands it. I didn't want to keep typing `ip a` every time I booted the machine just to find my IP, so I set it manually using Kali's Network Manager:
 * **Address:** `10.0.0.2`
 * **Netmask:** `24`
 * **Gateway:** `10.0.0.1`
+
+<img width="1917" height="1076" alt="Screenshot 2026-09-16 122954" src="https://github.com/user-attachments/assets/14bbd0d9-d7f9-4482-833f-873f460c5185" />
 
 ### Step 6: Took a "Clean" Snapshot
 Once everything looked good, I took a VirtualBox snapshot called **"Clean Kali - Network Setup"**. If I mess something up in later labs (which is highly likely), I can just roll back to this instead of reinstalling the whole OS. Cheap insurance!
