@@ -140,7 +140,7 @@ Writing all this down actually helped me understand what I was clicking.
 
 **Narugopal Sing**
 
-**LinkedIn:** 
+**LinkedIn:** https://www.linkedin.com/in/narugopal-sing-94635a436?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 ---
 
